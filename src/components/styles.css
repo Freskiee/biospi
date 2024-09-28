@@ -1,0 +1,35 @@
+.nav-bgcolor {
+  background-color: rgb(222, 235, 246);
+}
+
+.nav-link-custom {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  position: relative;
+  color: rgb(124, 129, 254) !important;
+  font-size: 20px !important;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.nav-link-custom:hover {
+  color: rgb(191, 160, 243) !important;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(191, 160, 243);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+  transform: scaleX(1); /* Línea aparece en hover */
+}

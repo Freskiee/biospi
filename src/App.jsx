@@ -1,12 +1,10 @@
-import { Button } from "react-bootstrap";
+import { NavbarMenu } from "./components/NavbarMenu";
 
 function App() {
 
   return (
     <>
-      <div>
-        <Button variant="primary">Biospi</Button>
-      </div>
+        <NavbarMenu />
     </>
   )
 }
