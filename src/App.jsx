@@ -1,10 +1,12 @@
-import { NavbarMenu } from "./components/NavbarMenu";
+import { NavbarMenu } from "./components/Navbar/NavbarMenu";
+import { Introduction } from "./components/Introduction/Introduction";
 
 function App() {
 
   return (
     <>
-        <NavbarMenu />
+      <NavbarMenu />
+      <Introduction />
     </>
   )
 }

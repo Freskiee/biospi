@@ -1,0 +1,12 @@
+.introduction-container {
+  width: 100%; /* Ajusta el tamaño del contenedor */
+  max-width: 100%; /* Si deseas limitar el tamaño máximo */
+  margin: 0 auto; /* Centra el contenedor */
+  overflow: hidden; /* Oculta el contenido que se salga del contenedor */
+}
+
+.introduction-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Puedes experimentar con 'contain' o 'fill' si es necesario */
+}

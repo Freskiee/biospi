@@ -8,14 +8,14 @@
   font-weight: 200;
   font-style: normal;
   position: relative;
-  color: rgb(124, 129, 254) !important;
+  color: rgb(40, 65, 146) !important;
   font-size: 20px !important;
   padding: 10px 15px;
   text-decoration: none;
 }
 
 .nav-link-custom:hover {
-  color: rgb(191, 160, 243) !important;
+  color: rgb(48, 203, 207) !important;
 }
 
 .nav-link-custom::after {
@@ -23,7 +23,7 @@
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: rgb(191, 160, 243);
+  background-color: rgb(48, 203, 207);
   left: 0;
   bottom: 0;
   transform: scaleX(0);
@@ -32,4 +32,11 @@
 
 .nav-link-custom:hover::after {
   transform: scaleX(1); /* Línea aparece en hover */
+}
+
+@media (max-width: 768px) {
+  .nav-link-custom {
+    font-size: 18px; /* Un poco más pequeño en pantallas pequeñas */
+    padding: 8px 10px;
+  }
 }
