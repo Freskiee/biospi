@@ -1,12 +1,102 @@
-.introduction-container {
-  width: 100%; /* Ajusta el tamaño del contenedor */
-  max-width: 100%; /* Si deseas limitar el tamaño máximo */
-  margin: 0 auto; /* Centra el contenedor */
-  overflow: hidden; /* Oculta el contenido que se salga del contenedor */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #f9f9f9; /* Fondo suave */
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
 
 .introduction-image {
   width: 100%;
   height: auto;
   object-fit: cover; /* Puedes experimentar con 'contain' o 'fill' si es necesario */
+}
+
+.intro-section {
+  display: flex;
+  justify-content: space-between; /* Espacio entre la imagen y el texto */
+  align-items: center; /* Alinea verticalmente los elementos */
+  padding: 20px; /* Agrega espacio alrededor de la sección */
+}
+
+.intro-content {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: space-between; /* Espacia imagen y texto */
+  padding: 20px; /* Agrega un poco de padding para espacio en los bordes */
+}
+
+.intro-image {
+  flex: 1;
+  max-width: 40%;
+}
+
+.intro-text {
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column; /* Coloca la imagen encima del texto en pantallas pequeñas */
+    text-align: center; /* Centra el texto */
+  }
+
+  .intro-image,
+  .intro-text {
+    margin: 0; /* Elimina márgenes para centrar todo */
+    width: 100%; /* Asegura que ambos elementos ocupen el ancho completo */
+  }
+
+  .intro-image img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+  }
+}
+
+.company-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(48, 203, 207);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: rgb(
+    40,
+    65,
+    146
+  ); /* Cambia el color cuando pasas el mouse */
+}
+
+.intro-text p {
+  font-family: "Arial", sans-serif; /* Tipografía general */
+  margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+.intro-text p:first-of-type {
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #555; /* Color más oscuro para un contraste */
+}
+
+.intro-text p:last-of-type {
+  padding-top: 25px;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Tipografía diferente */
+  color: #555555c3; /* Color más oscuro para un contraste */
 }
