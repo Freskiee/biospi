@@ -40,6 +40,22 @@ export const Introduction = () => {
                     </div>
                 </div>
             </section>
+            {/* Nueva sección para texto y enlaces */}
+            <section className='links-section'>
+                <div className='links-content'>
+                    <div className='links-text'>
+                        <h3>Mantente al día</h3>
+                    </div>
+                    <div className='links'>
+                        <a href="https://www.facebook.com/Biospii" target="_blank" className='social-icon'>
+                            <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/biospi_mx/" target="_blank" className='social-icon'>
+                            <i className="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
