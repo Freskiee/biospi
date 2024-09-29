@@ -22,9 +22,9 @@ export const Introduction = () => {
                         </div>
                         {/* Texto de introducción y botón a la derecha */}
                         <div className="intro-text">
-                            <h3>¿Quiénes somos?</h3>
+                            <h3><b>¿Quiénes somos?</b></h3>
                             <br />
-                            <h3>En BIOSPI, somos amantes de todos <br /> los animales...</h3>
+                            <h3><b>En BIOSPI, somos amantes de todos</b><br /> <b>los animales...</b></h3>
                             <br />
                             <p>
                                 los respetamos y les damos un valor mayor al de una simple mascota, que forman parte de nuestras vidas, convirtiéndose así en un miembro importante de la familia.
@@ -32,8 +32,9 @@ export const Introduction = () => {
                             <p>
                                 <span>Ten la seguridad y la confianza de que con nosotros, recibirá el trato digno y respetuoso que ese hermoso ser se merece.</span>
                             </p>
+                            <br /><br />
                             <a href="/contacto" className="contact-button">
-                                Contáctanos
+                                📞<b>  Contáctanos</b>
                             </a>
                         </div>
                     </div>
