@@ -5,22 +5,13 @@ import perrito from '../../img/perrito.png';
 export const Introduction = () => {
     return (
         <div>
-            {/* Imagen de la parte superior */}
             <img src={biospiImage} alt='Biospi' className='introduction-image' />
-
-            {/* Nueva sección con clase intro-container */}
             <section className='intro-container'>
                 <div className='intro-section'>
                     <div className="intro-content">
-                        {/* Imagen a la izquierda */}
                         <div className="intro-image">
-                            <img
-                                src={perrito}
-                                alt="img_ref"
-                                className='company-image'
-                            />
+                            <img src={perrito} alt="img_ref" className='company-image' />
                         </div>
-                        {/* Texto de introducción y botón a la derecha */}
                         <div className="intro-text">
                             <h3><b>¿Quiénes somos?</b></h3>
                             <br />
@@ -40,7 +31,7 @@ export const Introduction = () => {
                     </div>
                 </div>
             </section>
-            {/* Nueva sección para texto y enlaces */}
+
             <section className='links-section'>
                 <div className='links-content'>
                     <div className='links-text'>
@@ -54,6 +45,28 @@ export const Introduction = () => {
                             <i className="fab fa-instagram"></i>
                         </a>
                     </div>
+                </div>
+            </section>
+
+            <section className="company-info">
+                <div className="info-column">
+                    <h3>MISIÓN</h3>
+                    <p><span>Biospi tiene un claro enfoque al trato digno, respetuoso y amoroso; que debe recibir tu pequeño compañero, ofreciendo productos y servicios de una excelente calidad.</span></p>
+                </div>
+                <div className="info-column">
+                    <h3>VISIÓN</h3>
+                    <p><span>¡Diversificación en nuestros servicios! Biospi también es un espacio en el cual encontrarás: hospedaje para tus compañeritos de vida en nuestro Resort Canino, servicio de estética, spa, venta de accesorios, alimentos, área de entrenamiento canino y muchas cosas más.</span></p>
+                    <p>“En Biospi trabajamos en brindar un servicio de excelencia y mejorar cada día”</p>
+                </div>
+                <div className="info-column">
+                    <h3>VALORES</h3>
+                    <p><span>Compromiso</span>
+                    <span>Eficiencia</span>
+                    <span>Efectividad</span>
+                    <span>Empatía</span>
+                    <span>Simplicidad</span>
+                    <span>Calidez</span>
+                    <span>Conexión con la naturaleza</span></p>
                 </div>
             </section>
         </div>

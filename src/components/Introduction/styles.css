@@ -1,197 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
 
 .intro-container {
-    display: flex;
-    flex-direction: column; 
-    padding: 60px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .introduction-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .intro-section {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    padding: 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 .intro-content {
-    display: flex;
-    flex-direction: row; 
-    align-items: flex-start; 
-    padding: 20px; 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 .intro-image {
-    width: 100%; 
-    max-width: 400px; 
-    margin-right: 50px; /* Agrega margen a la derecha de la imagen */
+  width: 100%;
+  max-width: 400px;
+  margin-right: 50px; /* Agrega margen a la derecha de la imagen */
 }
 
 .intro-text {
-    text-align: left; 
-    width: 100%;
-    margin-left: 50px;
-    margin-right: 20px;
+  text-align: left;
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
-    .intro-section {
-        flex-direction: column; /* Cambia a columna para pantallas pequeñas */
-        align-items: center; /* Centra el contenido */
-    }
+  .intro-section {
+    flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+    align-items: center; /* Centra el contenido */
+  }
 
-    .intro-image {
-        margin-bottom: 15px; 
-        max-width: 100%; 
-    }
+  .intro-image {
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
 
-    .intro-text {
-        text-align: center; 
-        width: auto; /* Permite que el texto se ajuste al ancho */
-    }
+  .intro-text {
+    text-align: center;
+    width: auto; /* Permite que el texto se ajuste al ancho */
+  }
 
-    /* Ajusta la dirección del flex para que la imagen esté encima del texto */
-    .intro-content {
-        flex-direction: column; 
-    }
+  /* Ajusta la dirección del flex para que la imagen esté encima del texto */
+  .intro-content {
+    flex-direction: column;
+  }
 }
 
 .company-image {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    margin-left: 20px;
-    font-size: 18px;
-    color: #fff;
-    background-color: rgb(48, 203, 207);
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(48, 203, 207);
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-    background-color: rgb(40, 65, 146); 
+  background-color: rgb(40, 65, 146);
 }
 
 .intro-text p {
-    font-family: "Arial", sans-serif; 
-    margin-bottom: 10px; 
+  font-family: "Arial", sans-serif;
+  margin-bottom: 10px;
 }
 
 .intro-text p:first-of-type {
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #555; 
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #555;
 }
 
 .intro-text p:last-of-type {
-    padding-top: 25px;
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    color: #555555c3; 
+  padding-top: 25px;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #555555c3;
 }
 
+/* Sección principal */
 .links-section {
-    position: relative; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 50px;
-    background-image: url('../../img/perro_gato.png'); 
-    background-size: cover; 
-    background-position: center; 
-    border-radius: none; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-top: 0; 
-    color: white; 
-    overflow: hidden; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 85px;
+  background-image: url("../../img/perro_gato.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  overflow: hidden;
 }
 
 .links-section::before {
-    content: ''; 
-    position: absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(26, 25, 25, 0.605); /* Ajustar la opacidad aquí */
-    z-index: 1; 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 25, 25, 0.712); /* Overlay oscuro */
+  z-index: 1;
 }
 
 .links-content {
-    display: flex;
-    justify-content: flex-start; /* Alinea el contenido a la izquierda */
-    align-items: center; /* Alineación vertical */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1200px; /* Limita el ancho máximo para mejor legibilidad */
-    position: relative; /* Necesario para que el contenido esté por encima del pseudo-elemento */
-    z-index: 2; /* Asegura que el contenido esté por encima del pseudo-elemento */
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2; /* Superpone el contenido */
 }
 
+/* Alineación de los botones y el texto en una fila */
 .links {
-    display: flex; /* Alinea los enlaces en una fila */
-    gap: 15px; /* Reduce el espacio entre los enlaces */
-    margin-right: 300px;
+  display: flex; /* Alineación horizontal */
+  align-items: center;
+  gap: 25px; /* Espacio entre los íconos y el texto */
 }
 
+/* Texto "Mantente al día" */
 .links-text {
-    flex: 1; /* Permite que el texto ocupe el espacio necesario */
-    text-align: center; /* Centra el texto */
-    margin-right: 5px; /* Espacio entre el texto y los botones */
+  margin-right: 25px; /* Ajusta el espacio entre el texto y los íconos */
+  text-align: center;
 }
 
 .links-text h3 {
-    color: #e3e3e3; /* Color blanco */
-    font-size: 2rem; /* Tamaño más grande */
-    font-family: 'Roboto', sans-serif; /* Fuente moderna */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para resaltar */
-    margin: 0; /* Sin márgenes */
-    padding: 10px; /* Espacio alrededor */
-    transition: color 0.3s ease; /* Transición al cambiar el color */
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-family: "Maven Pro", sans-serif;
+  text-shadow: 1px 1px 2px rgba(37, 40, 39, 0.7);
+  margin: 0;
+  padding: 10px;
+  transition: color 0.3s ease;
 }
 
 .links-text h3:hover {
-    color: rgb(48, 203, 207); /* Cambia el color al pasar el mouse */
+  color: rgb(48, 203, 207);
 }
 
+/* Botones de enlace con fondo aqua */
 .link-button {
-    display: flex;
-    justify-content: center; /* Centra el contenido del botón */
-    align-items: center; /* Centra verticalmente */
-    width: 40px; /* Ancho del botón */
-    height: 40px; /* Altura del botón */
-    border-radius: 50%; /* Hace que el botón sea redondo */
-    background-color: rgb(48, 203, 207); /* Color de fondo */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    transition: background-color 0.3s ease; /* Transición para el hover */
-    margin-left: 5px; /* Reduce el margen izquierdo para acercar al texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Hace que los botones sean circulares */
+  background-color: #00ffff; /* Fondo aqua */
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  z-index: 2; /* Asegura que el botón sea visible */
 }
 
 .link-button:hover {
-    background-color: rgb(40, 65, 146); 
+  background-color: rgb(40, 65, 146); /* Color al pasar el mouse */
 }
 
+/* Ícono dentro del botón de enlace */
 .social-icon {
-    font-size: 40px; /* Cambia el tamaño de los íconos */
-    color: #e3e3e3; /* Color inicial de los íconos */
-    transition: color 0.3s ease; /* Para una transición suave al cambiar de color */
-    margin-left: 20px; /* Espacio entre los íconos */
+  font-size: 30px; /* Tamaño del ícono */
+  color: white;
 }
 
 .social-icon:hover {
-    color: rgb(48, 203, 207); /* Cambia el color al pasar el mouse */
+  color: rgb(58, 35, 210); /* Cambia el color del ícono al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .links-section {
+    padding: 50px;
+    background-size: cover;
+  }
+
+  .links-text h3 {
+    font-size: 2rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+  }
+
+  .link-button {
+    width: 50px; /* Tamaño del botón en pantallas pequeñas */
+    height: 50px;
+  }
+
+  .social-icon {
+    font-size: 25px; /* Tamaño del ícono en pantallas pequeñas */
+  }
+
+  .links {
+    gap: 15px; /* Ajusta el espacio entre botones y texto en pantallas pequeñas */
+  }
+}
+
+/* Sección de misión, visión y valores */
+.company-info {
+  display: flex; /* Alinea las columnas horizontalmente */
+  justify-content: space-between; /* Distribuye uniformemente las columnas */
+  align-items: flex-start; /* Alinea el contenido en la parte superior */
+  padding: 40px; /* Espaciado alrededor */
+  background-color: #f3f3f3; /* Color de fondo */
+  margin-top: 0; /* Espaciado superior respecto a la sección anterior */
+}
+
+.info-column {
+  width: 30%; /* Cada columna ocupa el 30% del contenedor */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+}
+
+.info-column h3 {
+  font-size: 2rem; /* Tamaño del título */
+  color: #333; /* Color del texto */
+  margin-bottom: 25px; /* Espacio debajo del título */
+  font-family: "Roboto", sans-serif; /* Fuente moderna */
+  font-weight: 700; /* Negrita para títulos */
+}
+
+.info-column p {
+  font-size: 1rem; /* Tamaño del texto del párrafo */
+  color: #555; /* Color del texto */
+  line-height: 1.6; /* Mejora la legibilidad */
+  font-family: "Arial", sans-serif; /* Fuente del cuerpo del texto */
+  margin-top: 10px; /* Espacio entre párrafos */
+}
+
+.info-column span {
+  display: block; /* Para manejar el espaciado entre valores en la lista */
+  margin-bottom: 5px; /* Espacio entre cada valor */
+}
+
+@media (max-width: 768px) {
+  .company-info {
+    flex-direction: column; /* Coloca las columnas en una sola fila vertical */
+    align-items: center; /* Centra el contenido en pantallas pequeñas */
+  }
+
+  .info-column {
+    width: 100%; /* Cada columna ocupa el 100% del ancho */
+    margin-bottom: 20px; /* Espaciado entre las columnas */
+  }
 }

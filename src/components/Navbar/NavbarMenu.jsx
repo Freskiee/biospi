@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-import logo from '../../img/BIOSPI-LOGO_baja-300x300.webp';
+import logo from '../../img/BIOSPI-LOGO_baja-300x300.png';
 import './styles.css';
 
 
