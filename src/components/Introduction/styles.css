@@ -1,6 +1,8 @@
+/* Importación de fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
 
+/* Intro Section Styles */
 .intro-container {
   display: flex;
   flex-direction: column;
@@ -70,6 +72,7 @@
   height: auto;
 }
 
+/* Botón de contacto */
 .contact-button {
   display: inline-block;
   padding: 10px 20px;
@@ -105,7 +108,7 @@
   color: #555555c3;
 }
 
-/* Sección principal */
+/* Section - Links */
 .links-section {
   position: relative;
   display: flex;
@@ -141,14 +144,12 @@
   z-index: 2; /* Superpone el contenido */
 }
 
-/* Alineación de los botones y el texto en una fila */
 .links {
   display: flex; /* Alineación horizontal */
   align-items: center;
   gap: 25px; /* Espacio entre los íconos y el texto */
 }
 
-/* Texto "Mantente al día" */
 .links-text {
   margin-right: 25px; /* Ajusta el espacio entre el texto y los íconos */
   text-align: center;
@@ -168,7 +169,6 @@
   color: rgb(48, 203, 207);
 }
 
-/* Botones de enlace con fondo aqua */
 .link-button {
   display: flex;
   justify-content: center;
@@ -180,14 +180,13 @@
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  z-index: 2; /* Asegura que el botón sea visible */
+  z-index: 2;
 }
 
 .link-button:hover {
   background-color: rgb(40, 65, 146); /* Color al pasar el mouse */
 }
 
-/* Ícono dentro del botón de enlace */
 .social-icon {
   font-size: 30px; /* Tamaño del ícono */
   color: white;
@@ -197,7 +196,6 @@
   color: rgb(58, 35, 210); /* Cambia el color del ícono al pasar el mouse */
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
   .links-section {
     padding: 50px;
@@ -227,46 +225,64 @@
   display: flex; /* Alinea las columnas horizontalmente */
   justify-content: space-between; /* Distribuye uniformemente las columnas */
   align-items: flex-start; /* Alinea el contenido en la parte superior */
-  padding: 40px; /* Espaciado alrededor */
-  background-color: #f3f3f3; /* Color de fondo */
-  margin-top: 0; /* Espaciado superior respecto a la sección anterior */
+  padding: 40px;
+  background-color: #f3f3f3;
+  margin-top: 0;
+  position: relative; /* Habilita el uso de imágenes de fondo */
 }
 
+/* Estilos con imágenes de fondo para Misión, Visión y Valores */
 .info-column {
-  width: 30%; /* Cada columna ocupa el 30% del contenedor */
-  padding: 20px; /* Espaciado interno */
-  text-align: center; /* Centra el texto */
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.9; /* Suaviza la visibilidad del fondo */
+}
+
+.info-column.mision {
+  background-image: url('../../img/mision_img.png'); /* Imagen de Misión */
+}
+
+.info-column.vision {
+  background-image: url('../../img/vision_img.png'); /* Imagen de Visión */
+}
+
+.info-column.valores {
+  background-image: url('../../img/valores_img.png'); /* Imagen de Valores */
 }
 
 .info-column h3 {
-  font-size: 2rem; /* Tamaño del título */
-  color: #333; /* Color del texto */
-  margin-bottom: 25px; /* Espacio debajo del título */
-  font-family: "Roboto", sans-serif; /* Fuente moderna */
-  font-weight: 700; /* Negrita para títulos */
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .info-column p {
-  font-size: 1rem; /* Tamaño del texto del párrafo */
-  color: #555; /* Color del texto */
-  line-height: 1.6; /* Mejora la legibilidad */
-  font-family: "Arial", sans-serif; /* Fuente del cuerpo del texto */
-  margin-top: 10px; /* Espacio entre párrafos */
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  margin-top: 10px;
 }
 
 .info-column span {
-  display: block; /* Para manejar el espaciado entre valores en la lista */
-  margin-bottom: 5px; /* Espacio entre cada valor */
+  display: block;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
   .company-info {
-    flex-direction: column; /* Coloca las columnas en una sola fila vertical */
-    align-items: center; /* Centra el contenido en pantallas pequeñas */
+    flex-direction: column; /* Coloca las columnas en una fila vertical */
+    align-items: center;
   }
 
   .info-column {
-    width: 100%; /* Cada columna ocupa el 100% del ancho */
-    margin-bottom: 20px; /* Espaciado entre las columnas */
+    width: 100%; /* Cada columna ocupa el 100% */
+    margin-bottom: 20px;
   }
 }
