@@ -222,67 +222,105 @@
 
 /* Sección de misión, visión y valores */
 .company-info {
-  display: flex; /* Alinea las columnas horizontalmente */
-  justify-content: space-between; /* Distribuye uniformemente las columnas */
-  align-items: flex-start; /* Alinea el contenido en la parte superior */
+  display: flex;
+  justify-content: space-between; /* Alineación horizontal */
+  gap: 40px; /* Espacio entre las columnas */
   padding: 40px;
   background-color: #f3f3f3;
   margin-top: 0;
-  position: relative; /* Habilita el uso de imágenes de fondo */
 }
 
-/* Estilos con imágenes de fondo para Misión, Visión y Valores */
+/* Columnas de misión, visión y valores */
 .info-column {
-  width: 30%;
+  flex: 1;
   padding: 20px;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 0.9; /* Suaviza la visibilidad del fondo */
+  text-align: center; /* Cambiado a centro para alinear el texto */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alineación a la izquierda en pantallas grandes */
+  position: relative; /* Para posicionar la imagen detrás del texto */
 }
 
-.info-column.mision {
-  background-image: url('../../img/mision_img.png'); /* Imagen de Misión */
+/* Encabezados que contienen imagen y título */
+.info-header {
+  display: flex;
+  align-items: center; /* Alinea la imagen y el título verticalmente */
+  padding-bottom: 10px;
 }
 
-.info-column.vision {
-  background-image: url('../../img/vision_img.png'); /* Imagen de Visión */
-}
-
-.info-column.valores {
-  background-image: url('../../img/valores_img.png'); /* Imagen de Valores */
+/* Imágenes a la izquierda del texto */
+.info-image {
+  width: 180px; /* Aumentado tamaño de la imagen */
+  height: auto;
+  position: relative; /* Mantiene la imagen dentro del flujo del documento */
+  margin-right: 15px; /* Espacio entre imagen y título */
+  z-index: 1; /* Asegura que la imagen esté por delante del texto */
 }
 
 .info-column h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #333;
-  margin-bottom: 25px;
+  margin: 20px 0 10px; /* Espacio alrededor del título */
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
+/* Párrafos con el contenido de misión, visión y valores */
 .info-column p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #555;
   line-height: 1.6;
   font-family: "Arial", sans-serif;
   margin-top: 10px;
 }
 
-.info-column span {
-  display: block;
-  margin-bottom: 5px;
+/* Estilo para los spans dentro de los párrafos de valores */
+.valores-text {
+  display: flex;
+  flex-direction: column; /* Cambia a columna para que cada span esté en un renglón */
+  align-items: center; /* Centra los spans horizontalmente */
+  justify-content: center; /* Centra verticalmente si hay suficiente altura */
+  text-align: center; /* Asegura que el texto dentro de cada span esté centrado */
+  margin: 0; /* Elimina márgenes si es necesario */
+  padding: 0; /* Elimina relleno si es necesario */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
+
+/* Estilo para el eslogan */
+.eslogan {
+  font-family: "Courier New", monospace; /* Cambia a la fuente que prefieras */
+  font-style: italic; /* Puede ser cursiva */
+  font-weight: lighter; /* Resaltar el eslogan */
+  margin-top: 10px; /* Espacio superior */
+}
+
+/* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
   .company-info {
-    flex-direction: column; /* Coloca las columnas en una fila vertical */
-    align-items: center;
+    flex-direction: column; /* Hace que las columnas se apilen verticalmente */
   }
 
   .info-column {
-    width: 100%; /* Cada columna ocupa el 100% */
-    margin-bottom: 20px;
+    width: 100%; /* Asegura que ocupen el ancho completo */
+    margin-bottom: 30px; /* Agrega espacio entre las columnas */
+    align-items: center; /* Centra el contenido en pantallas pequeñas */
+  }
+
+  .info-image {
+    width: 120px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+    margin-bottom: 10px; /* Reduce el margen entre la imagen y el texto */
+    position: absolute; /* Permite que la imagen esté detrás del texto */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar completamente */
+    z-index: 1; /* Envía la imagen detrás del contenido */
+  }
+
+  .info-column h3 {
+    font-size: 1.5rem; /* Ajusta el tamaño de los títulos en pantallas pequeñas */
+  }
+
+  .info-column p {
+    font-size: 0.9rem; /* Reduce el tamaño del texto en pantallas pequeñas */
   }
 }
