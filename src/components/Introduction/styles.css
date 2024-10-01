@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
 
-/* Intro Section Styles */
+/* ========================= */
+/*   INTRO SECTION STYLES    */
+/* ========================= */
 .intro-container {
   display: flex;
   flex-direction: column;
@@ -35,7 +37,7 @@
 .intro-image {
   width: 100%;
   max-width: 400px;
-  margin-right: 50px; /* Agrega margen a la derecha de la imagen */
+  margin-right: 50px; 
 }
 
 .intro-text {
@@ -47,8 +49,8 @@
 
 @media (max-width: 768px) {
   .intro-section {
-    flex-direction: column; /* Cambia a columna para pantallas pequeñas */
-    align-items: center; /* Centra el contenido */
+    flex-direction: column;
+    align-items: center;
   }
 
   .intro-image {
@@ -58,10 +60,9 @@
 
   .intro-text {
     text-align: center;
-    width: auto; /* Permite que el texto se ajuste al ancho */
+    width: auto;
   }
 
-  /* Ajusta la dirección del flex para que la imagen esté encima del texto */
   .intro-content {
     flex-direction: column;
   }
@@ -72,7 +73,9 @@
   height: auto;
 }
 
-/* Botón de contacto */
+/* ========================= */
+/*   CONTACT BUTTON STYLES    */
+/* ========================= */
 .contact-button {
   display: inline-block;
   padding: 10px 20px;
@@ -108,7 +111,9 @@
   color: #555555c3;
 }
 
-/* Section - Links */
+/* ========================= */
+/*   LINKS SECTION STYLES    */
+/* ========================= */
 .links-section {
   position: relative;
   display: flex;
@@ -130,28 +135,28 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(26, 25, 25, 0.712); /* Overlay oscuro */
+  background-color: rgba(26, 25, 25, 0.712); 
   z-index: 1;
 }
 
 .links-content {
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
+  justify-content: center; 
+  align-items: center; 
   width: 100%;
   max-width: 1200px;
   position: relative;
-  z-index: 2; /* Superpone el contenido */
+  z-index: 2; 
 }
 
 .links {
-  display: flex; /* Alineación horizontal */
+  display: flex; 
   align-items: center;
-  gap: 25px; /* Espacio entre los íconos y el texto */
+  gap: 25px; 
 }
 
 .links-text {
-  margin-right: 25px; /* Ajusta el espacio entre el texto y los íconos */
+  margin-right: 25px; 
   text-align: center;
 }
 
@@ -175,8 +180,8 @@
   align-items: center;
   width: 60px;
   height: 60px;
-  border-radius: 50%; /* Hace que los botones sean circulares */
-  background-color: #00ffff; /* Fondo aqua */
+  border-radius: 50%;
+  background-color: #00ffff;
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -184,16 +189,16 @@
 }
 
 .link-button:hover {
-  background-color: rgb(40, 65, 146); /* Color al pasar el mouse */
+  background-color: rgb(40, 65, 146);
 }
 
 .social-icon {
-  font-size: 30px; /* Tamaño del ícono */
+  font-size: 30px; 
   color: white;
 }
 
 .social-icon:hover {
-  color: rgb(58, 35, 210); /* Cambia el color del ícono al pasar el mouse */
+  color: rgb(58, 35, 210); 
 }
 
 @media (max-width: 768px) {
@@ -203,28 +208,30 @@
   }
 
   .links-text h3 {
-    font-size: 2rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    font-size: 2rem; 
   }
 
   .link-button {
-    width: 50px; /* Tamaño del botón en pantallas pequeñas */
+    width: 50px; 
     height: 50px;
   }
 
   .social-icon {
-    font-size: 25px; /* Tamaño del ícono en pantallas pequeñas */
+    font-size: 25px; 
   }
 
   .links {
-    gap: 15px; /* Ajusta el espacio entre botones y texto en pantallas pequeñas */
+    gap: 15px; 
   }
 }
 
-/* Sección de misión, visión y valores */
+/* ========================= */
+/*   COMPANY INFO SECTION    */
+/* ========================= */
 .company-info {
   display: flex;
-  justify-content: space-between; /* Alineación horizontal */
-  gap: 40px; /* Espacio entre las columnas */
+  justify-content: space-between; 
+  gap: 40px; 
   padding: 40px;
   background-color: #f3f3f3;
   margin-top: 0;
@@ -234,33 +241,33 @@
 .info-column {
   flex: 1;
   padding: 20px;
-  text-align: center; /* Cambiado a centro para alinear el texto */
+  text-align: center; 
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alineación a la izquierda en pantallas grandes */
-  position: relative; /* Para posicionar la imagen detrás del texto */
+  align-items: flex-start; 
+  position: relative; 
 }
 
 /* Encabezados que contienen imagen y título */
 .info-header {
   display: flex;
-  align-items: center; /* Alinea la imagen y el título verticalmente */
+  align-items: center; 
   padding-bottom: 10px;
 }
 
 /* Imágenes a la izquierda del texto */
 .info-image {
-  width: 180px; /* Aumentado tamaño de la imagen */
+  width: 180px; 
   height: auto;
-  position: relative; /* Mantiene la imagen dentro del flujo del documento */
-  margin-right: 15px; /* Espacio entre imagen y título */
-  z-index: 1; /* Asegura que la imagen esté por delante del texto */
+  position: relative; 
+  margin-right: 15px; 
+  z-index: 1; 
 }
 
 .info-column h3 {
   font-size: 1.8rem;
   color: #333;
-  margin: 20px 0 10px; /* Espacio alrededor del título */
+  margin: 20px 0 10px; 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -277,50 +284,51 @@
 /* Estilo para los spans dentro de los párrafos de valores */
 .valores-text {
   display: flex;
-  flex-direction: column; /* Cambia a columna para que cada span esté en un renglón */
-  align-items: center; /* Centra los spans horizontalmente */
-  justify-content: center; /* Centra verticalmente si hay suficiente altura */
-  text-align: center; /* Asegura que el texto dentro de cada span esté centrado */
-  margin: 0; /* Elimina márgenes si es necesario */
-  padding: 0; /* Elimina relleno si es necesario */
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  margin: 0; 
+  padding: 0; 
+  width: 100%; 
 }
-
 
 /* Estilo para el eslogan */
 .eslogan {
-  font-family: "Courier New", monospace; /* Cambia a la fuente que prefieras */
-  font-style: italic; /* Puede ser cursiva */
-  font-weight: lighter; /* Resaltar el eslogan */
-  margin-top: 10px; /* Espacio superior */
+  font-family: "Courier New", monospace; 
+  font-style: italic; 
+  font-weight: lighter; 
+  margin-top: 10px; 
 }
 
-/* Media queries para pantallas pequeñas */
+/* ========================= */
+/*   MEDIA QUERIES          */
+/* ========================= */
 @media (max-width: 768px) {
   .company-info {
-    flex-direction: column; /* Hace que las columnas se apilen verticalmente */
+    flex-direction: column; 
   }
 
   .info-column {
-    width: 100%; /* Asegura que ocupen el ancho completo */
-    margin-bottom: 30px; /* Agrega espacio entre las columnas */
-    align-items: center; /* Centra el contenido en pantallas pequeñas */
+    width: 100%; 
+    margin-bottom: 30px; 
+    align-items: center; 
   }
 
   .info-image {
-    width: 120px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
-    margin-bottom: 10px; /* Reduce el margen entre la imagen y el texto */
-    position: absolute; /* Permite que la imagen esté detrás del texto */
-    left: 50%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Ajuste para centrar completamente */
-    z-index: 1; /* Envía la imagen detrás del contenido */
+    width: 120px; 
+    margin-bottom: 10px; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
   }
 
   .info-column h3 {
-    font-size: 1.5rem; /* Ajusta el tamaño de los títulos en pantallas pequeñas */
+    font-size: 1.5rem; 
   }
 
   .info-column p {
-    font-size: 0.9rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+    font-size: 0.9rem; 
   }
 }
